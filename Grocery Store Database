@@ -1,0 +1,14 @@
+--Create a grocery store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, type TEXT, size TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO store VALUES (1, "RED", "top", "S", 10, 5);
+INSERT INTO store VALUES (2, "BLUE", "top", "M", 5, 5);
+INSERT INTO store VALUES (3, "YELLOW", "top", "L", 3, 5);
+INSERT INTO store VALUES (4, "BLUE", "pants", "M", 10, 20);
+INSERT INTO store VALUES (5, "BLACK", "pants", "L", 15, 20);
+INSERT INTO store VALUES (6, "WHITE", "pants", "S", 5, 20);
+
+SELECT * from store 
+WHERE price >=10
+ORDER BY quantity;
